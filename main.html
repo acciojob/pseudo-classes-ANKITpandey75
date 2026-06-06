@@ -1,28 +1,68 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Pseudo Classes Task</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Article and List</title>
+  <style>
+    :root {
+      background-color: rgb(135, 206, 235);
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+    }
+
+    body {
+      margin: 0;
+      background-color: rgb(135, 206, 235);
+      font-size: 18px;
+    }
+
+    article p:first-child {
+      color: white;
+      background-color: black;
+    }
+
+    article p:nth-child(2) {
+      color: #222;
+    }
+
+    article p:last-child {
+      color: red;
+    }
+
+    li {
+      width: 50%;
+      padding: 10px;
+      background-color: gray;
+    }
+
+    li:nth-child(odd) {
+      background-color: white;
+    }
+
+    li:first-child,
+    li:last-child {
+      font-size: 22px;
+    }
+
+    li:nth-last-child(3) {
+      background-color: pink;
+    }
+  </style>
 </head>
-
 <body>
+  <article>
+    <p>First paragraph...</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+    <p>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus.</p>
+  </article>
 
-    <div>
-        <p>First paragraph...</p>
-        <p>Lorem ipsum dolor of and web page editors now use Lorem Ipsum as their default model text</p>
-        <p>  but theem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-
-	</div>
-
-    <ul>
-        <li>First Item</li>
-        <li>Second Item</li>
-        <li>Third Item</li>
-        <li>Fourth Item</li>
-        <li>Fifth Item</li>
-    </ul>
-
+  <ul>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+    <li>Fourth Item</li>
+    <li>Fifth Item</li>
+  </ul>
 </body>
-
 </html>
